@@ -22,11 +22,12 @@ public class WebBrowserAuthenticator : IdentityModel.OidcClient.Browser.IBrowser
         ResultType = BrowserResultType.Success
       };
     }
-    catch (TaskCanceledException e)
+    catch (TaskCanceledException)
     {
       return new BrowserResult
       {
-        ResultType = BrowserResultType.UserCancel
+        ResultType = BrowserResultType.UserCancel,
+        ErrorDescription = "Login canceled by the user."
       };
     }
   }
