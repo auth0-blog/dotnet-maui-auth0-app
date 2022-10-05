@@ -4,30 +4,30 @@ namespace MauiAuth0App;
 
 public partial class MainPage : ContentPage
 {
-  int count = 0;
+	int count = 0;
   private readonly Auth0Client auth0Client;
 
   public MainPage(Auth0Client client)
-  {
-    InitializeComponent();
+	{
+		InitializeComponent();
     auth0Client = client;
 
-		#if WINDOWS
-		auth0Client.Browser = new WebViewBrowserAuthenticator(WebViewInstance);
-		#endif
+#if WINDOWS
+    auth0Client.Browser = new WebViewBrowserAuthenticator(WebViewInstance);
+#endif
   }
 
   private void OnCounterClicked(object sender, EventArgs e)
-  {
-    count++;
+	{
+		count++;
 
-    if (count == 1)
-      CounterBtn.Text = $"Clicked {count} time";
-    else
-      CounterBtn.Text = $"Clicked {count} times";
+		if (count == 1)
+			CounterBtn.Text = $"Clicked {count} time";
+		else
+			CounterBtn.Text = $"Clicked {count} times";
 
-    SemanticScreenReader.Announce(CounterBtn.Text);
-  }
+		SemanticScreenReader.Announce(CounterBtn.Text);
+	}
 
   private async void OnLoginClicked(object sender, EventArgs e)
   {
@@ -52,11 +52,14 @@ public partial class MainPage : ContentPage
   {
     var logoutResult = await auth0Client.LogoutAsync();
 
-    if (!logoutResult.IsError) {
-    	HomeView.IsVisible = false;
-    	LoginView.IsVisible = true;
-    } else {
-    	await DisplayAlert("Error", logoutResult.ErrorDescription, "OK");
+    if (!logoutResult.IsError)
+    {
+      HomeView.IsVisible = false;
+      LoginView.IsVisible = true;
+    }
+    else
+    {
+      await DisplayAlert("Error", logoutResult.ErrorDescription, "OK");
     }
   }
 }

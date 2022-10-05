@@ -4,7 +4,7 @@ Check out the article [Add Authentication to .NET MAUI Apps with Auth0](https://
 
 # Requirements
 
-- [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet/6.0) installed on your machine
+- [.NET 7 SDK](https://dotnet.microsoft.com/download/dotnet/7.0) installed on your machine
 - The required assets needed for your target(s) platform(s) as described [here](https://docs.microsoft.com/en-us/dotnet/maui/get-started/first-app)
 - Visual Studio 2022 Preview (optional)
 
@@ -32,10 +32,9 @@ Check out the article [Add Authentication to .NET MAUI Apps with Auth0](https://
    # iOS target platform
    dotnet build -t:Run -f net6.0-ios
    
-   # Windows target platform
-   msbuild -r -p:targetframework=net6.0-windows10.0.19041
-   MauiAuth0App.exe
+   # Windows target platform (⚠️ Currently not working! ⚠️)
+   dotnet build -t:Run -f net7.0-windows10.0.19041.0
    ```
-
    
+
 

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31611.283
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MauiAuth0App", "MauiAuth0App.csproj", "{E551034C-A619-4532-84A1-EF0B99FCCB66}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MauiAuth0App", "MauiAuth0App.csproj", "{91EEF173-AE18-4C1B-B51F-CCC61A1E0939}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,12 +11,12 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E551034C-A619-4532-84A1-EF0B99FCCB66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E551034C-A619-4532-84A1-EF0B99FCCB66}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E551034C-A619-4532-84A1-EF0B99FCCB66}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{E551034C-A619-4532-84A1-EF0B99FCCB66}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E551034C-A619-4532-84A1-EF0B99FCCB66}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E551034C-A619-4532-84A1-EF0B99FCCB66}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{91EEF173-AE18-4C1B-B51F-CCC61A1E0939}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91EEF173-AE18-4C1B-B51F-CCC61A1E0939}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91EEF173-AE18-4C1B-B51F-CCC61A1E0939}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{91EEF173-AE18-4C1B-B51F-CCC61A1E0939}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91EEF173-AE18-4C1B-B51F-CCC61A1E0939}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91EEF173-AE18-4C1B-B51F-CCC61A1E0939}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,4 +1,4 @@
-namespace MauiAuth0App.Auth0;
+﻿namespace MauiAuth0App.Auth0;
 
 public class Auth0ClientOptions
 {
@@ -19,3 +19,4 @@ public class Auth0ClientOptions
 
   public IdentityModel.OidcClient.Browser.IBrowser Browser { get; set; }
 }
+
