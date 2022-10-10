@@ -1,8 +1,8 @@
-using IdentityModel.OidcClient.Browser;
+﻿using IdentityModel.OidcClient.Browser;
 
 namespace MauiAuth0App;
 
-public class WebViewBrowserAuthenticator: IdentityModel.OidcClient.Browser.IBrowser
+public class WebViewBrowserAuthenticator : IdentityModel.OidcClient.Browser.IBrowser
 {
   private readonly WebView _webView;
 
@@ -21,7 +21,14 @@ public class WebViewBrowserAuthenticator: IdentityModel.OidcClient.Browser.IBrow
       {
         _webView.WidthRequest = 0;
         _webView.HeightRequest = 0;
-        tcs.SetResult(new BrowserResult { ResultType = BrowserResultType.Success, Response = e.Url.ToString() });
+        if (tcs.Task.Status != TaskStatus.RanToCompletion)
+        {
+          tcs.SetResult(new BrowserResult
+          {
+            ResultType = BrowserResultType.Success,
+            Response = e.Url.ToString()
+          });
+        }
       }
 
     };

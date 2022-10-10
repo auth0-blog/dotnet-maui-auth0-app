@@ -1,4 +1,4 @@
-using IdentityModel.Client;
+﻿using IdentityModel.Client;
 using IdentityModel.OidcClient.Browser;
 
 namespace MauiAuth0App.Auth0;
@@ -9,7 +9,7 @@ public class WebBrowserAuthenticator : IdentityModel.OidcClient.Browser.IBrowser
   {
     try
     {
-       WebAuthenticatorResult result = await WebAuthenticator.Default.AuthenticateAsync(
+      WebAuthenticatorResult result = await WebAuthenticator.Default.AuthenticateAsync(
           new Uri(options.StartUrl),
           new Uri(options.EndUrl));
 
