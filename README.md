@@ -3,6 +3,8 @@ This repository contains a basic .NET MAUI application integrated with Auth0 aut
 Check out the article [Add Authentication to .NET MAUI Apps with Auth0](https://auth0.com/blog/add-authentication-to-dotnet-maui-apps-with-auth0/) for the implementation details.
 
 # Requirements
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fauth0-blog%2Fdotnet-maui-auth0-app.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fauth0-blog%2Fdotnet-maui-auth0-app?ref=badge_shield)
+
 
 - [.NET 7 SDK](https://dotnet.microsoft.com/download/dotnet/7.0) installed on your machine
 - The required assets needed for your target(s) platform(s) as described [here](https://docs.microsoft.com/en-us/dotnet/maui/get-started/first-app)
@@ -37,3 +39,7 @@ Check out the article [Add Authentication to .NET MAUI Apps with Auth0](https://
    ```
    
 
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fauth0-blog%2Fdotnet-maui-auth0-app.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fauth0-blog%2Fdotnet-maui-auth0-app?ref=badge_large)
