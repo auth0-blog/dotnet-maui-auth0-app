@@ -16,6 +16,12 @@ public class WebBrowserAuthenticator : IdentityModel.OidcClient.Browser.IBrowser
       var url = new RequestUrl(options.EndUrl)
           .Create(new Parameters(result.Properties));
 
+      // Workaround for Facebook's issue (https://stackoverflow.com/questions/7131909/facebook-callback-appends-to-return-url)
+      if (url.EndsWith("%23_%3D_"))
+      {
+        url = url.Substring(0, url.LastIndexOf("%23_%3D_"));
+      }
+
       return new BrowserResult
       {
         Response = url,
