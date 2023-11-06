@@ -17,8 +17,6 @@
                     SemanticProperties.Hint="Click to log in"
                     Clicked="OnLoginClicked"
                     HorizontalOptions="Center" />
-
-                <WebView x:Name="WebViewInstance" />
             </StackLayout>
 
             <StackLayout
