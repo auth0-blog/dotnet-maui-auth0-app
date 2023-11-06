@@ -1,5 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
-using MauiAuth0App.Auth0;
+using Auth0.OidcClient;
 
 namespace MauiAuth0App;
 
@@ -27,11 +27,8 @@ public static class MauiProgram
       Domain = "<YOUR_AUTH0_DOMAIN>",
       ClientId = "<YOUR_CLIENT_ID>",
       Scope = "openid profile",
-#if WINDOWS
-			RedirectUri = "http://localhost/callback"
-#else
-      RedirectUri = "myapp://callback"
-#endif
+      RedirectUri = "myapp://callback",
+	  PostLogoutRedirectUri = "myapp://callback",
     }));
 
     return builder.Build();

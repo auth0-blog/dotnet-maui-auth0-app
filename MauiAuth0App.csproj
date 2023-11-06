@@ -49,7 +49,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="IdentityModel.OidcClient" Version="5.0.2" />
+		<PackageReference Include="Auth0.OidcClient.MAUI" Version="1.0.0-beta.1" />
+		<PackageReference Include="IdentityModel.OidcClient" Version="5.2.1" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0-rc.2.22472.3" />
 	</ItemGroup>
 

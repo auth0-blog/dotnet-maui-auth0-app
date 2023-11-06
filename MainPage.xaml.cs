@@ -1,4 +1,6 @@
-﻿using MauiAuth0App.Auth0;
+﻿using Auth0.OidcClient;
+using IdentityModel.OidcClient;
+using IdentityModel.OidcClient.Browser;
 
 namespace MauiAuth0App;
 
@@ -11,10 +13,6 @@ public partial class MainPage : ContentPage
 	{
 		InitializeComponent();
     auth0Client = client;
-
-#if WINDOWS
-    auth0Client.Browser = new WebViewBrowserAuthenticator(WebViewInstance);
-#endif
   }
 
   private void OnCounterClicked(object sender, EventArgs e)
@@ -52,14 +50,14 @@ public partial class MainPage : ContentPage
   {
     var logoutResult = await auth0Client.LogoutAsync();
 
-    if (!logoutResult.IsError)
+    if (logoutResult != BrowserResultType.Success)
     {
       HomeView.IsVisible = false;
       LoginView.IsVisible = true;
     }
     else
     {
-      await DisplayAlert("Error", logoutResult.ErrorDescription, "OK");
+      await DisplayAlert("Error", logoutResult.ToString(), "OK");
     }
   }
 }
