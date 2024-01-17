@@ -6,9 +6,9 @@ Check out the article [Add Authentication to .NET MAUI Apps with Auth0](https://
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fauth0-blog%2Fdotnet-maui-auth0-app.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fauth0-blog%2Fdotnet-maui-auth0-app?ref=badge_shield)
 
 
-- [.NET 7 SDK](https://dotnet.microsoft.com/download/dotnet/7.0) installed on your machine
+- [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0) installed on your machine
 - The required assets needed for your target(s) platform(s) as described [here](https://docs.microsoft.com/en-us/dotnet/maui/get-started/first-app)
-- Visual Studio 2022 for Windows 17.3  or Visual Studio 2022 for Mac 17.4 (optional)
+- Visual Studio 2022 for Windows or Visual Studio 2022 for Mac (optional)
 
 # To run this application
 
@@ -35,7 +35,7 @@ Check out the article [Add Authentication to .NET MAUI Apps with Auth0](https://
    dotnet build -t:Run -f net7.0-ios
    
    # Windows target platform (⚠️ Currently not working! ⚠️)
-   dotnet build -t:Run -f net7.0-windows10.0.19041.0
+   dotnet build -t:Run -f net7.0-windows10.0.19041.0 -p:WindowsPackageType=None
    ```
    
 
