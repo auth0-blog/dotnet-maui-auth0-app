@@ -26,16 +26,16 @@ Check out the article [Add Authentication to .NET MAUI Apps with Auth0](https://
 
    ```bash
    # macOS target platform
-   dotnet build -t:Run -f net7.0-maccatalyst
+   dotnet build -t:Run -f net8.0-maccatalyst
    
    # Android target platform
-   dotnet build -t:Run -f net7.0-android
+   dotnet build -t:Run -f net8.0-android
    
    # iOS target platform
-   dotnet build -t:Run -f net7.0-ios
+   dotnet build -t:Run -f net8.0-ios
    
    # Windows target platform (⚠️ Currently not working! ⚠️)
-   dotnet build -t:Run -f net7.0-windows10.0.19041.0 -p:WindowsPackageType=None
+   dotnet build -t:Run -f net8.0-windows10.0.19041.0 -p:WindowsPackageType=None
    ```
    
 
